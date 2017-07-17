@@ -6,9 +6,7 @@ Ejemplo creado por Jorge Martínez, autor de Ingeniero de Aviones
 
 int t = 250; //Una variable para controlar el tiempo de los delays
 
-int boton1 = 22
-
-  ; //Hemos conectado el boton1 al pin 22. MODIFICA EL NUMERO "22"  SEGÚN TU PIN DE CONEXIÓN
+int boton1 = 22; //Hemos conectado el boton1 al pin 22. MODIFICA EL NUMERO "22"  SEGÚN TU PIN DE CONEXIÓN
 int valBoton1 = 0; //Aquí alamacenaremos su valor
 
 void setup(){
@@ -27,7 +25,7 @@ void loop(){
   if (valBoton1 == 0){
      //El siguiente comando manda la instrucción deseada por el puerto serial
      //Escribe entre "" el comando de LINK2FS deseado: ejemplo "A06"
-     //A06 en LINK2FS alterna entre la frecuencia standby y l activa de COM1  
+     //A06 en LINK2FS alterna entre la frecuencia standby y l activa de COM1
      Serial.println("A06");
      delay(t);
    }
